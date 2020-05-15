@@ -1,0 +1,42 @@
+.banner {
+    background: url("https://image.tmdb.org/t/p/w533_and_h300_bestv2/97GsCX3k6BbprnBIIMlVKirmhLz.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+
+    .info-banner {
+        position: absolute;
+        bottom: 15px;
+
+        h2,
+        p {
+            color: #ffffff;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: normal;
+        }
+        p {
+            font-size: 12px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+ion-grid {
+    position: absolute;
+    top: 180px;
+
+    h1 {
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+        color: #7e7a7a;
+    }
+}

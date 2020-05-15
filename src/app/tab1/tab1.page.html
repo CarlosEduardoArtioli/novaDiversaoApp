@@ -1,17 +1,40 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      Filmes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="dark">
+  <div class="banner">
+    <div class="info-banner">
+      <h2>Gotham</h2>
+      <p>2014 &nbsp;&nbsp; 16 &nbsp;&nbsp; 5 temporadas</p>
+      <ion-button color="danger" size="small">ASSISTIR</ion-button>
+      <ion-button fill="outline" color="light" size="small">EPISÓDIOS</ion-button>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-grid>
+    <h1>Populares</h1>
+    <ion-row>
+      <ion-col>
+        <img src="https://image.tmdb.org/t/p/w220_and_h330_face/wigZBAmNrIhxp2FNGOROUAeHvdh.jpg">
+      </ion-col>
+      <ion-col>
+        <img src="https://image.tmdb.org/t/p/w220_and_h330_face/g6n7TdQSgozArIM0okXTjjCM9Np.jpg">
+      </ion-col>
+    </ion-row>
+    <h1>Em cartaz</h1>
+    <ion-row>
+      <ion-col>
+        <img src="https://image.tmdb.org/t/p/w220_and_h330_face/zEae3Y5gB7e8Z3LZWsMWZcrsf92.jpg">
+      </ion-col>
+      <ion-col>
+        <img src="https://image.tmdb.org/t/p/w220_and_h330_face/mIH20h18hrLXRuIoVu3f2vEKsmm.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
