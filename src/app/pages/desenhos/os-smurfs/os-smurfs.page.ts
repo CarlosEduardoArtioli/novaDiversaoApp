@@ -38,9 +38,6 @@ export class OsSmurfsPage {
         },
         {
           url: "https://image.tmdb.org/t/p/w533_and_h300_bestv2/7lmoFri37iLDnyOCodsiD4ujlm0.jpg"
-        },
-        {
-          url: "https://image.tmdb.org/t/p/w533_and_h300_bestv2/zixxYFEliYHfFUO16BKOvekFL5y.jpg"
         }
       ]
     };
