@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Filmes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <ion-slides pager="true" [options]="slideOpts" #slide (ionSlideDidChange)="SlideDidChange(slider,slide)">
+
+      <ion-slide *ngFor="let slider of slider.slidesItems">
+        <img src="{{slider.url}}">
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="ion-content">
+
+    <ion-item lines="full">
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h2><b>Aprendiz de Espiã</b></h2>
+          <h5>(2020)</h5>
+        </ion-text>
+        <p>Família, Ação, Comédia &nbsp;&#9679;&nbsp; 1h 25m</p>
+        <ion-button href="https://youtu.be/dorZ5i7hhXo" color="danger">
+          <ion-icon name="play"></ion-icon>&nbsp;&nbsp; Reproduzir trailer
+        </ion-button>
+      </ion-label>
+    </ion-item>
+
+    <div>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="list"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="heart"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="bookmark"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="star"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </div>
+
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <b>Sinopse:</b>
+        </ion-text>
+        <ion-text>
+          <p>
+            Um agente da CIA (Dave Bautista) de coração endurecido é enviado em uma
+            missão secreta para vigiar uma família. Porém, o que ele não esperava era
+            passar por poucas e boas à mercê de Sophie (Chloe Coleman), a filha precoce
+            de nove anos de idade da família.
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Séries
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <ion-slides pager="true" [options]="slideOpts" #slide (ionSlideDidChange)="SlideDidChange(slider,slide)">
+
+      <ion-slide *ngFor="let slider of slider.slidesItems">
+        <img src="{{slider.url}}">
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="ion-content">
+
+    <ion-item lines="full">
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h2><b>Lei & Ordem: Unidade de Vítimas Especiais</b></h2>
+          <h5>(1999)</h5>
+        </ion-text>
+        <p>Crime, Drama &nbsp;&#9679;&nbsp; 43m</p>
+        <ion-button href="https://www.youtube.com/watch?v=jRWyO0MKdJA" color="danger">
+          <ion-icon name="play"></ion-icon>&nbsp;&nbsp; Reproduzir trailer
+        </ion-button>
+      </ion-label>
+    </ion-item>
+
+    <div>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="list"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="heart"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="bookmark"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="star"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </div>
+
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <b>Sinopse:</b>
+        </ion-text>
+        <ion-text>
+          <p>
+            Detetives que fazem parte da Unidade de Vítimas Especiais da
+            polícia de Nova York investigam crimes de natureza sexual,
+            como estupros, em que a vítima sobrevive, e auxilia as autoridades
+            na investigação.
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+
+  </div>
+
+</ion-content>

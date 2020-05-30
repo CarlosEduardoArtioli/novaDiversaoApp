@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Séries
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <ion-slides pager="true" [options]="slideOpts" #slide (ionSlideDidChange)="SlideDidChange(slider,slide)">
+
+      <ion-slide *ngFor="let slider of slider.slidesItems">
+        <img src="{{slider.url}}">
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="ion-content">
+
+    <ion-item lines="full">
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h2><b>Flash</b></h2>
+          <h5>(2014)</h5>
+        </ion-text>
+        <p>Drama, Sci-Fi & Fantasy &nbsp;&#9679;&nbsp; 44m</p>
+        <ion-button href="https://www.youtube.com/watch?v=fymU5y3Xm14" color="danger">
+          <ion-icon name="play"></ion-icon>&nbsp;&nbsp; Reproduzir trailer
+        </ion-button>
+      </ion-label>
+    </ion-item>
+
+    <div>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="list"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="heart"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="bookmark"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="medium" size="small">
+                <ion-icon name="star"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </div>
+
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <b>Sinopse:</b>
+        </ion-text>
+        <ion-text>
+          <p>
+            Barry enfrenta diversos assassinos que invadem a premiação onde
+            ele acompanha Iris, mas os efeitos colaterais de seus novos superpoderes
+            representam uma ameaça.
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+
+  </div>
+
+</ion-content>
