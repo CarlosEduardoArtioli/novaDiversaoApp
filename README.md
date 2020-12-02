@@ -7,6 +7,9 @@ Projeto desenvolvido na aula de Tecnologias para Mobilidade, na Etec Cidade do L
 
 <p align="center">
   <img alt="Screen" src="img/tela1.png" width="30%" height="20%">
+  <img alt="Screen" src="img/tela2.png" width="30%" height="20%">
+  <img alt="Screen" src="img/tela3.png" width="30%" height="20%">
+  <img alt="Screen" src="img/tela4.png" width="30%" height="20%">
 </p>
 
 ## 🔧 Como instalar e utilizar
