@@ -5,21 +5,9 @@ Projeto desenvolvido na aula de Tecnologias para Mobilidade, na Etec Cidade do L
 
 ## 🖥 Preview 
 
-<div class="box">
-    <img src="img/foto1"/>
-    <span> Página Filmes </span>
-</div>
-<div class="box">
-    <img src="img/foto2"/>
-    <span> Página Mais Informações </span>
-</div>
-
-<style>
-div.box {
-	width: 150px;
-	display: inline-block;
-}
-</style>
+<p align="center">
+  <img alt="Screen" src="img/finalApp.png" width="90%">
+</p>
 
 ## 🔧 Como instalar e utilizar
 
