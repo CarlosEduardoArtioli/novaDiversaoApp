@@ -26,6 +26,7 @@ npm i
 
 # Executar o servidor/aplicação
 ionic serve
+ou
 ionic serve -l
 
 # Para acessar a aplicação, entre no navegador e acesse
